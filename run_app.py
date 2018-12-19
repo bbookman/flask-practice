@@ -30,7 +30,6 @@ def build_username(first_name, last_name):
 def search_user():
     users = ['Jack', 'Morgan', 'Moe', 'Steve']
     search_param = request.args.get('search')
-    pdb.set_trace()
     count = 0
     for user in users:
         if search_param.lower() in user.lower():
